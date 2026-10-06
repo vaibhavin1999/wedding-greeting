@@ -1,0 +1,40 @@
+/* Keep the illustration tied to the viewport, never to the scroll position. */
+.hero{height:100svh;min-height:min(620px,100svh)}
+.temple{width:min(42vw,68svh,620px);height:min(42vw,68svh,620px);margin-left:0;left:50%;transform:translateX(-50%)}
+.temple img{flex:0 0 100%;min-width:100%;height:100%;object-fit:contain}
+.temple img:last-child{margin-left:-100%}
+@media(max-width:700px){
+  .hero{min-height:100svh}
+  .hero nav{padding:18px 22px}
+  .hero nav a{font-size:8px;letter-spacing:.12em}
+  .hero-copy{margin:clamp(36px,7vh,62px) 16px 0}
+  .hero-copy h1{font-size:clamp(38px,11vw,68px);line-height:1.05}
+  .hero-copy h1 i{font-size:clamp(27px,7.5vw,46px)}
+  .hero-copy p{margin-top:18px;font-size:12px}
+  .temple{width:min(88vw,56svh);height:min(88vw,56svh);bottom:28px}
+  .scroll{left:50%;transform:translateX(-50%);bottom:14px;white-space:nowrap}
+  .scroll:after{display:none}
+  .section{padding:clamp(58px,12vw,82px) 22px}
+  h2{font-size:clamp(38px,10vw,56px);overflow-wrap:anywhere}
+  .family{font-size:22px}
+  .events{margin-top:30px;gap:16px}
+  .events article{padding:26px 18px}
+  .rsvp{gap:24px}
+  .rsvp form{min-width:0}
+  .rsvp input,.rsvp select,.wish input,.wish textarea{min-width:0;font-size:16px}
+  .video div{height:auto;aspect-ratio:4/3;padding:20px;background-position:center}
+  .count strong{font-size:clamp(35px,10vw,52px)}
+  .know-grid{margin:25px auto}
+  .know-grid p{padding:18px 8px}
+  .strip h2{font-size:clamp(32px,9vw,46px)}
+  footer h2{font-size:clamp(42px,12vw,54px)}
+}
+@media(max-width:360px){
+  .hero nav b{font-size:26px}
+  .hero nav a{font-size:7px}
+  .hero-copy{margin-top:32px}
+  .hero-copy h1{font-size:37px}
+  .temple{width:min(90vw,48svh);height:min(90vw,48svh)}
+  .section{padding-inline:18px}
+  .events h3{font-size:30px}
+}
